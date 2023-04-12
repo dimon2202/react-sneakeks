@@ -1,13 +1,13 @@
 import React from "react";
 import AppContext from "../context";
 
-const Info = ({image, title, description}) => {
+const Info = ({image, title, description, ladge}) => {
   const {setCartOpened} = React.useContext(AppContext)
  
   return (
-    <div className="cartEmpty">
+    <div style={{height: '100%'}} className="cartEmpty">
       <img
-        width="120px"
+        width={ladge}
         src={image}
         alt="Empty-cart"
       />
