@@ -34,7 +34,7 @@ export default function Drawer({ items = [], onClose, onRemove, opened }) {
     <div className={`${s.overlay} ${opened ? s.overlayVisible : ''}`}>
       <div className={s.drawer}>
         <h2>
-          Корзина
+        Кошик
           <img onClick={onClose} src="/img/btn-remove.svg" alt="remove" />
         </h2>
 
@@ -63,18 +63,18 @@ export default function Drawer({ items = [], onClose, onRemove, opened }) {
             <div className="cartTotalBlock">
               <ul>
                 <li>
-                  <span>Итого:</span>
+                  <span>Разом:</span>
                   <div></div>
                   <b>{totalPrice} грн.</b>
                 </li>
                 <li>
-                  <span>Налог 5%:</span>
+                  <span>Податок 5%:</span>
                   <div></div>
                   <b>{totalPrice * 0.05} грн.</b>
                 </li>
               </ul>
               <button disabled={isLoading} onClick={onClickOrder} className="greenButton">
-                Оформыть заказ
+              Оформити замовлення
                 <img src="/img/arrow.svg" alt="arrow" />
               </button>
             </div>
@@ -86,11 +86,11 @@ export default function Drawer({ items = [], onClose, onRemove, opened }) {
                 ? "/img/complete-order.jpg"
                 : "/img/empty-cart.jpg"
             }
-            title={isOrderComplete ? "Заказ оформлен!" : "Корзина пустая"}
+            title={isOrderComplete ? "Замовлення оформлене!" : "Кошик порожній"}
             description={
               isOrderComplete
-                ? "Ваш заказ #1 скоро будет передан курьерской доставке"
-                : "Добавьте хотя бы одну пару кросовок, что бы сделать заказ"
+                ? "Ваше замовлення #1 незабаром буде передано кур'єрській доставці"
+                : "Додати хоча б одну пару кросівок, щоб зробити замовлення"
             }
           />
         )}

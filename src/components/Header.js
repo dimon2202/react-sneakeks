@@ -12,7 +12,7 @@ export default function Header(props) {
           <img width={40} height={40} src="/img/logo.png" alt="logo" />
           <div className="headerInfo">
             <h3>Shop sneakers</h3>
-            <p>Выбери кросовки своей мечты!</p>
+            <p>Вибери кросівки своєї мрії!</p>
           </div>
         </div>
       </Link>

@@ -9,7 +9,7 @@ function Orders() {
       {!orders ? (
         <>
           <div>
-            <h1>Мои заказы</h1>
+            <h1>Мої замовлення</h1>
           </div>
           <div className="cards">
             {/* {favorites.map((item, index) => (
@@ -30,8 +30,8 @@ function Orders() {
           <Info
             image={"/img/smail_bed.jpg"}
             ladge={50}
-            title={"У вас нет заказов"}
-            description={"Вы нищеброд? Оформите хотя бы один заказ."}
+            title={"У вас немає замовлень"}
+            description={"Оформіть хоча б одне замовлення."}
           />
         </>
       )}

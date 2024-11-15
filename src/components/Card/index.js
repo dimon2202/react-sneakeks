@@ -56,7 +56,7 @@ export default function Card({
           <h5>{name}</h5>
           <div className={s.cardBottom}>
             <div>
-              <span>Цена:</span>
+              <span>Ціна:</span>
               <b>{price} грн.</b>
             </div>
 

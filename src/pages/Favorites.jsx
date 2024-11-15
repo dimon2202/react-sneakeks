@@ -11,7 +11,7 @@ function Favorites() {
       {!favorites ? (
         <>
           <div>
-            <h1>Мои закладки</h1>
+            <h1>Мої закладки</h1>
           </div>
           <div className="cards">
             {favorites.map((item, index) => (
@@ -32,8 +32,8 @@ function Favorites() {
         <Info
             image={"/img/smail.jpg"}
             ladge={50}
-            title={"Закладок нет :("}
-            description={"Вы ничего не добавляли в закладки"}
+            title={"Закладок немає :("}
+            description={"Ви нічого не додавали до закладок"}
           />
         </>
       )}

@@ -32,14 +32,14 @@ const Home = ({
     <div className="content">
       <div className="content-top">
         <h1>
-          {searchValue ? `Поиск по запросу: "${searchValue}"` : "Все кросовки"}
+          {searchValue ? `Пошук за запитом: "${searchValue}"` : "Усі кросівки"}
         </h1>
         <div className="search-block">
           <img src="/img/search.svg" alt="search" />
           <input
             onChange={onChangeSearchValue}
             value={searchValue}
-            placeholder="Поиск ..."
+            placeholder="Пошук ..."
             alt="search"
           />
           {searchValue && (
